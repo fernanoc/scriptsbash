@@ -14,7 +14,7 @@ del markup de *GitHub*
 2. Segundo
 3. Tercero
 
-Esto es algo de ´echo "Hola código fuente"´ en la mitad de una oración.
+Esto es algo de `echo "Hola código fuente"` en la mitad de una oración.
 
 ```
 clear
