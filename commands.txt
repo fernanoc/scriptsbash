@@ -1,0 +1,1000 @@
+  202  source --help
+  203  man source
+  204  deactivate
+  205  cd ..
+  206  alias 
+  207  source ~/environments/my_env/bin/activate
+  208  pwd
+  209  alias piton='source ~/environments/my_env/bin/activate'
+  210  deactivate
+  211  piton
+  212  deactivate
+  213  pwd
+  214  ls 
+  215  ls -la
+  216  vi .bashrc 
+  217  exit
+  218  ll
+  219  piton
+  220  vi .bashrc 
+  221  exit
+  222  piton
+  223  pwd
+  224  deactivate
+  225  clear
+  226  cls
+  227  clear --help
+  228  man clear
+  229  alias cls='clear'
+  230  cls
+  231  cd ..
+  232  ls
+  233  sudo apt search Midnight
+  234  sudo apt install mc mc-data 
+  235  mc
+  236  read
+  237  read --help
+  238  read -n 5 -t 5 prueba
+  239  echo $prueba
+  240  read -n 5 -t 5 prueba
+  241  echo $prueba
+  242  read -d 'p' -t 5 prueba
+  243  echo $prueba
+  244  bc
+  245  ls
+  246  cp vars.sh vars2.sh 
+  247  mcedit vars2.sh 
+  248  bash vars2.sh 
+  249  bash vars2.sh 23 45
+  250  mcedit vars2.sh 
+  251  bash vars2.sh 23 45
+  252  bash vars2.sh 23 45 122 4 5 5 6  77 5 4
+  253  bash vars2.sh 23 45 122 4 5 5 6 77 5 4
+  254  bash vars2.sh 23 45 122 4 5 5 6 77 5 4 12
+  255  true
+  256  false
+  257  true --help
+  258  man true
+  259  man false
+  260  echo $?
+  261  true
+  262  echo $?
+  263  false
+  264  echo $?
+  265  echo I will succeed.
+  266  echo $?
+  267  true && true 
+  268  echo $?
+  269  true && false
+  270  echo $?
+  271  true || false
+  272  echo $?
+  273  true || true
+  274  echo $?
+  275  false || true
+  276  echo $?
+  277  false || false
+  278  echo $?
+  279  true && echo "Program 1 was executed."
+  280  false && echo "Program 2 was executed."
+  281  false && true && echo Hel
+  282  echo 1 && false && echo 3
+  283  echo Athos && echo Porthos && echo Aramis
+  284  echo Athos" && echo Porthos && echo Aramis
+  285  echo  && echo Porthos && echo Aramis
+  286  dirt && echo Porthos && echo Aramis
+  287  ll && echo Porthos && echo Aramis
+  288  false || echo 1 || echo 2
+  289  echo 3 || false || echo 4
+  290  echo Athos || echo Porthos || echo Aramis
+  291  diry || echo Porthos || echo Aramis
+  292  cls
+  293  echo Athos || echo Porthos && echo Aramis
+  294  echo Gaspar && echo Balthasar || echo Melchior
+  295  pwd
+  296  vi .bashrc
+  297  cls
+  298  [[ 4 -gt 3 ]]
+  299  echo $?
+  300  [[ 4 -gt 67 ]]
+  301  echo $?
+  302  [[ 4 -gt 67 ]] && echo "El primer número es mayor"
+  303  [[ 499 -gt 67 ]] && echo "El primer número es mayor"
+  304  [[ 499 -gt 67 ]] && echo "El primer número es mayor" || Echo "El segundo lo es"
+  305  [[ 49 -gt 67 ]] && echo "El primer número es mayor" || Echo "El segundo lo es"
+  306  [[ 49 -gt 67 ]] && echo "El primer número es mayor" || echo "El segundo lo es"
+  307  [[ -e math.hj ]] && echo "El primer número es mayor" || echo "El segundo lo es"
+  308  [[ -e math.hj ]] && echo "El archivo existe" || echo "El archivo no existe"
+  309  [[ -e $archivo ]] && echo "El archivo existe" || echo "El archivo no existe"
+  310  archivo=states.txt 
+  311  [[ -e $archivo ]] && echo "El archivo existe" || echo "El archivo no existe"
+  312  archivo=states6.txt 
+  313  [[ -e $archivo ]] && echo "El archivo existe" || echo "El archivo no existe"
+  314  [[ rhythms =~ [aeiou] ]] && echo t || echo f
+  315  my_name=sean
+  316  [[ $my_name =~ ^s.+n$ ]] && echo t || echo f
+  317  [[ $my_name =~ ^Y.+n$ ]] && echo t || echo f
+  318  #!/usr/bin/env bash
+  319  # File: simpleif.sh
+  320  echo "Start program"
+  321  if [[ $1 -eq 4 ]]; then   echo "You entered $1"; fi
+  322  echo "End program"
+  323  touch simpleif.sh
+  324  mcedit simpleif.sh 
+  325  bash simpleif.sh 
+  326  bash simpleif.sh 6 
+  327  bash simpleif.sh 1 
+  328  bash simpleif.sh 4
+  329  vi simpleifelse.sh
+  330  bash simpleifelse.sh 
+  331  bash simpleifelse.sh 4
+  332  bash simpleifelse.sh 6
+  333  bash simpleifelse.sh 6 7
+  334  bash simpleifelse.sh 60 7
+  335  bash simpleifelse.sh rf 7
+  336  bash simpleifelse.sh 2+2
+  337  bash simpleifelse.sh 2\*2
+  338  bash simpleifelse.sh 2\^2
+  339  bash simpleifelse.sh 2^2
+  340  bash simpleifelse.sh $(echo 2^2 | bc -l)
+  341  bc 2*2
+  342  bc -l 2*2
+  343  bc --help 2*2
+  344  bash simpleifelse.sh $(echo 2^2 | bc -l)
+  345  vi #!/usr/bin/env bash
+  346  vi simpleelif.sh
+  347  bash simpleelif.sh 4
+  348  bash simpleelif.sh 5
+  349  bash simpleelif.sh 6
+  350  bash simpleelif.sh 344
+  351  bash simpleelif.sh 1
+  352  vi condexif.sh
+  353  bash condexif.sh
+  354  bash condexif.sh Fernan
+  355  bash condexif.sh fernan
+  356  vi condexif.sh
+  357  bash condexif.sh fernan
+  358  bash condexif.sh Fernan
+  359  vi nested.sh
+  360  bash nested.sh
+  361  vi nested.sh
+  362  bash nested.sh
+  363  bash nested.s7
+  364  bash nested.s 7
+  365  bash nested.sh 7
+  366  shutdown
+  367  halt
+  368  reboot
+  369  logout
+  370  pwd
+  371  ll
+  372  mcedit
+  373  pwd
+  374  mount
+  375  cd /
+  376  ls
+  377  cd home/
+  378  ls
+  379  cd fernanoc/
+  380  ls
+  381  apt
+  382  top
+  383  ls
+  384  ll
+  385  cls
+  386  ls
+  387  more simpleif
+  388  more simpleif.sh 
+  389  bash logic.sh 
+  390  echo Hola | egrep [[A-Z]]
+  391  echo Hola | egrep [A-Z]
+  392  vocal=$(echo Hola | egrep [A-Z])
+  393  echo $vocal
+  394  vocal=$(echo Hola | egrep [^A-Z])
+  395  echo $vocal
+  396  vocal=$(echo Hola | egrep [^1])
+  397  echo $vocal
+  398  vocal=$(echo Hola | egrep "jjj")
+  399  echo $?
+  400  vocal=$(echo Hola | egrep [^A-Z])
+  401  echo $?
+  402  vocal=$(echo Hola | egrep "jjj" || echo "nada")
+  403  echo $?
+  404  echo $vocal
+  405  bash logic.sh 
+  406  bash logic.sh Fer
+  407  bash logic.sh er
+  408  bash logic.sh Er
+  409  echo Fer | grep [^A-Z]
+  410  echo Fer | grep [^A-Z] || echo "nada"
+  411  echo er | grep [^A-Z] || echo "nada"
+  412  echo er | grep [A-Z] || echo "nada"
+  413  echo er | grep ^[A-Z] || echo "nada"
+  414  echo Fer | grep ^[A-Z] || echo "nada"
+  415  bash logic.sh Er
+  416  bash logic.sh gEr
+  417  bash logic.sh JgEr
+  418  exit
+  419  piton
+  420  deactivate
+  421  cls
+  422  ls
+  423  cd ..
+  424  ls
+  425  touch logic.sh
+  426  mcedit logic.sh
+  427  plagas=(sangre sapos enfermedad incendios)
+  428  echo ${plaga[0]}
+  429  echo ${plagas[0]}
+  430  echo ${plagas[3]}
+  431  echo ${plagas[4]}
+  432  echo $?
+  433  echo ${plagas[3]}
+  434  echo $?
+  435  echo ${plagas[4]} || echo "nada"
+  436  echo $(echo ${plagas[4]} || echo "nada")
+  437  echo $(echo ${plagas[4]} %% echo "nada")
+  438  echo $(echo ${plagas[4]} && echo "nada")
+  439  echo $(echo ${plagas[4]} || echo "nada")
+  440  echo $(echo ${plagas[10]} || echo "nada")
+  441  echo $(echo ${plagas[*]} || echo "nada")
+  442  echo ${plagas[*]} 
+  443  plagas[4]="jodida" 
+  444  echo ${plagas[*]} 
+  445  plagas[4]="joida" 
+  446  echo ${plagas[*]} 
+  447  echo $plagas[*]
+  448  echo ${plagas[*]}
+  449  echo ${plagas[*]:2:3}
+  450  echo ${#plagas[*]:2:3}
+  451  echo ${#plagas[*]}
+  452  echo ${plagas[*]}
+  453  dwarfs=(grumpy sleepy sneezy doc)
+  454  echo ${dwarfs[*]}
+  455  dwarfs+=(bashful dopey happy)
+  456  echo ${dwarfs[*]}
+  457  ## grumpy sleepy sneezy doc
+  458  ## grumpy sleepy sneezy doc bashful dopey happy
+  459  dwarfs+=(bashful dopey happy)
+  460  echo ${dwarfs[*]}
+  461  exit
+  462  pwd
+  463  cd ..
+  464  dir
+  465  ll
+  466  cd ProgramData/
+  467  dir
+  468  cd ..
+  469  ll
+  470  cd ProgramData/
+  471  dir
+  472  cd Voyasollam
+  473  dir
+  474  more hqepsg5v.xml 
+  475  cd ..
+  476  dir
+  477  rm -FR Voyasollam
+  478  rm -Rf Voyasollam
+  479  sudo rm -Rf Voyasollam
+  480  uname -a
+  481  exit
+  482  echo {0..9}
+  483  echo {0..100}
+  484  numeros=$(echo {0..100})
+  485  echo $numeros
+  486  letras=$(echo {a..z})
+  487  echo $numeros
+  488  echo $letras
+  489  letrasb=$(echo {a..Z})
+  490  echo $letrasb
+  491  letrasb=$(echo {a..zz})
+  492  echo $letrasb
+  493  letrasb=$(echo {a..t})
+  494  echo $letrasb
+  495  letrasb=$(echo {a..ñ})
+  496  echo $letrasb
+  497  letrasb=$(echo {a..99})
+  498  echo $letrasb
+  499  letrasb=$(echo {0..99})
+  500  echo $letrasb
+  501  letrasb=$(echo {0..99}{a..c})
+  502  echo $letrasb
+  503  letrasb=$(echo {0..9}{a..c})
+  504  echo $letrasb
+  505  start=4
+  506  end=9
+  507  echo {$start..$end}
+  508  eval echo {$start..$end}
+  509  man eval
+  510  eval --help
+  511  eval -?
+  512  eval --?
+  513  mkdir 100t
+  514  cd 100t/
+  515  echo {001..100}
+  516  echo file.{001..100}
+  517  echo file{001..100}
+  518  echo file{001..100}.old
+  519  touch $(echo file{001..100}.old)
+  520  ls
+  521  rm *1*.*
+  522  ls
+  523  rm *2*.*
+  524  ls
+  525  rm *3*.*
+  526  ls
+  527  rm *4*.*
+  528  ls
+  529  rm *5*.*
+  530  ls
+  531  rm *6*.*
+  532  ls
+  533  rm *7*.*
+  534  ls
+  535  rm *8*.*
+  536  ls
+  537  rm *9*.*
+  538  ls
+  539  cd ...
+  540  cd ..
+  541  rm 100t/
+  542  rmdir 100t/
+  543  ls
+  544  ll
+  545  touch forloop.sh && vi forloop.sh
+  546  bash forloop.sh 
+  547  vi forloop.sh
+  548  bash forloop.sh 
+  549  vi forloop.sh
+  550  bash forloop.sh 
+  551  vi forloop.sh
+  552  bash forloop.sh 
+  553  more forloop.sh 
+  554  vi manyloops.sh
+  555  bash manyloops.sh 
+  556  vi manyloops.sh 
+  557  vi whileloop.sh
+  558  bash whileloop.sh 
+  559  vi whileloop.sh
+  560  bash whileloop.sh 
+  561  vi whileloop.sh
+  562  ./whileloop.sh
+  563  bash whileloop.sh 
+  564  sh whileloop.sh 
+  565  bash whileloop.sh 
+  566  vi whileloop.sh
+  567  bash whileloop.sh 
+  568  vi whileloop.sh 
+  569  bash whileloop.sh 
+  570  vi whileloop.sh 
+  571  bash whileloop.sh 
+  572  for number in {1..3}; do   for letter in a b;   do     echo "number is $number, letter is $letter";   done; done
+  573  echo > nestedloop.sh
+  574  vi nestedloop.sh 
+  575  bash nestedloop.sh 
+  576  for number in {1..10}; do   if [[ $number -lt 3 ]] || [[ $number -gt 8 ]];   then     echo $number;   fi; done
+  577  for number in {1..10}; do   if [[ $number -lt 2 ]] || [[ $number -gt 8 ]];   then     echo $number;   fi; done
+  578  for number in {1..10}; do   if [[ $number -lt 7 ]] || [[ $number -gt 8 ]];   then     echo $number;   fi; done
+  579  mcedit superloop.sh
+  580  ll
+  581  more whileloop.sh 
+  582  more manyloops.sh 
+  583  ranlib
+  584  bc -l
+  585  bash superloop.sh 
+  586  echo --help
+  587  man echo
+  588  bash superloop.sh 
+  589  bash hello.sh 
+  590  hello
+  591  bash hello.sh 
+  592  bash hello.sh $2
+  593  bash hello.sh 34
+  594  ls
+  595  more simpleif
+  596  more simpleif.sh 
+  597  bash hello.sh 
+  598  bash hello.sh 45
+  599  bash hello.sh hola
+  600  source hello.sh 
+  601  source hello.sh ntmy hola
+  602  source hello.sh ntmy 
+  603  source hello.sh
+  604  ntmy hola
+  605  hello
+  606  exit
+  607  pwd
+  608  ll
+  609  nano
+  610  mcedit hello.sh
+  611  exit
+  612  source addseq.sh 
+  613  addseq 2 3 4 5
+  614  addseq 2 3 4 i
+  615  addseq 2 3 4 i 3
+  616  addseq 2 3 4 i 3.6
+  617  addseq 2 3 4 i 3,6
+  618  addseq 2 3 4 i $(echo "3 4")
+  619  addseq 2 3 4 i $(echo "4 4")
+  620  addseq 2 3 4 i $(str "4 4")
+  621  addseq 2 3 4 i $(str 4+4)
+  622  addseq 2 3 4 i $(let tp=4+4 | echo $tp)
+  623  addseq 2 3 4 i $(tp=4+4 | echo $tp)
+  624  addseq 2 3 4 i $(tp=4 | echo $tp)
+  625  addseq 2 3 4 $(tp=4 | echo $tp)
+  626  addseq 2 3 4 $(echo $tp)
+  627  addseq 2 3 4 $( 6 )
+  628  addseq 2 3 4 $(6)
+  629  addseq 2 3 4 $(echo 6)
+  630  echo $sum
+  631  local
+  632  source addseq.sh 
+  633  plier 3 4
+  634  source addseq.sh 
+  635  plier 3 4
+  636  let --help
+  637  man let
+  638  source addseq.sh 
+  639  plier 3 4
+  640  source addseq.sh 
+  641  plier 3 4
+  642  plier 3 4 10
+  643  plier 3 4 10 20
+  644  plier 3 4 10 20 /4
+  645  plier 3 4 10 20 3/4
+  646  plier 3 4 10 20 3,4
+  647  plier 3 4 10 20 3.4
+  648  plier 3 3.4
+  649  plier 3 3,4
+  650  plier 3 3.4
+  651  source addseq.sh 
+  652  plier 3 3.4
+  653  plier 3 3
+  654  source addseq.sh 
+  655  isiteven 3
+  656  isiteven 2
+  657  isiteven 25066654
+  658  isiteven 25066653
+  659  echo 1
+  660  echo 0
+  661  source addseq.sh 
+  662  nevens 10 3 5
+  663  nevens 10 3 5 5 5 5 5 5 5 5 5 5 5 5 5 7 7 7 7 9 9 9 0 10
+  664  nevens 1 2 3 4 5 6 7 8 9 10
+  665  nevens 1 2 3 4 5 6 7 8 9 10 11
+  666  echo $impares
+  667  echo $pares
+  668  echo $@
+  669  source addseq.sh 
+  670  howodd 23 24 24 10
+  671  man echo
+  672  source addseq.sh 
+  673  howodd 23 24 24 10
+  674  howodd 23 24 24 10 10
+  675  howodd 23 24 24 10 10 10
+  676  howodd 22 22 22 10 10 10
+  677  howodd 1 1
+  678  source addseq.sh 
+  679  howodd 1 1
+  680  source addseq.sh 
+  681  howodd 1 1
+  682  howodd 1 1 2
+  683  source addseq.sh 
+  684  howodd 1 1 2
+  685  howodd 1 1 2 2
+  686  source addseq.sh 
+  687  fib 1
+  688  fib 2
+  689  source addseq.sh 
+  690  fib 2
+  691  fib 3
+  692  fib 5
+  693  fib 109
+  694  ls
+  695  more nested.sh 
+  696  more nestedloop.sh 
+  697  source addseq.sh 
+  698  fib 109
+  699  source addseq.sh 
+  700  fib 109
+  701  fib 10
+  702  source addseq.sh 
+  703  fib 10
+  704  fib 20
+  705  source addseq.sh 
+  706  fib 20
+  707  source addseq.sh 
+  708  fib 20
+  709  source addseq.sh 
+  710  fib 20
+  711  fib 20
+  712  source addseq.sh 
+  713  fib 20
+  714  fib 1
+  715  fib 2
+  716  fib 3
+  717  fib 10
+  718  source addseq.sh 
+  719  fib 10
+  720  source addseq.sh 
+  721  fib 10
+  722  fib 1
+  723  fib 2
+  724  fib 3
+  725  source addseq.sh 
+  726  fib 3
+  727  source addseq.sh 
+  728  fib 3
+  729  fib 100
+  730  cls
+  731  git --version
+  732  sudo apt update git
+  733  sudo apt upgrade git
+  734  pwd
+  735  ls
+  736  ll
+  737  more cuetionario2/
+  738  ll cuetionario2/
+  739  ls
+  740  mkdir git
+  741  git config --global user.name "fernanoc"
+  742  git config --global user.email "fernanoc@hotmail.com"
+  743  cd git
+  744  mkdir bash
+  745  cd bash
+  746  git init
+  747  echo "Este es el primer repositorio" readme.txt
+  748  echo "Este es el primer repositorio" >> readme.txt
+  749  ll
+  750  l
+  751  ldr
+  752  ldir
+  753  cls
+  754  git status
+  755  git add readme.txt 
+  756  git status
+  757  git status
+  758  git add readme.txt 
+  759  git status
+  760  git commit -m "Creación del archivo readme.txt"
+  761  git status
+  762  tocuh file1.txt file2.txt file3.txt
+  763  touc}h file1.txt file2.txt file3.txt
+  764  touch file1.txt file2.txt file3.txt
+  765  ls
+  766  echo "Aprendiendo a agregar más archivos a GIT" >> readme.txt 
+  767  git status
+  768  git add -A 
+  769  git status
+  770  git commit -m "Se agregaron tres archivos"
+  771  git status
+  772  git reset --soft HEAD~
+  773  git status
+  774  mv file1.txt archivo1.txt
+  775  mv file2.txt archivo2.txt
+  776  mv file3.txt archivo3.txt
+  777  git status
+  778  git add *
+  779  git status
+  780  git commit -m "Archivos con nombres correctos"
+  781  pwd
+  782  cd ..
+  783  ls
+  784  tocuh file.txt
+  785  touch file.txt
+  786  n
+  787  git status
+  788  ls
+  789  rm file.txt
+  790  ls
+  791  cd..
+  792  ls
+  793  cd ..
+  794  pwd
+  795  ls
+  796  mkdir git/clasesinicial
+  797  ll *.sh
+  798  mv *.sh git/clasesinicial/
+  799  cd git
+  800  cd clasesinicial/
+  801  ls
+  802  git init
+  803  git status
+  804  git add -A
+  805  ls
+  806  git status
+  807  git commit -m "Carga inicial de archivos"
+  808  git status
+  809  cd ../..
+  810  ls
+  811  mv states*.* git/clasesinicial/
+  812  cd git
+  813  cd clasesinicial/
+  814  git status
+  815  git add -A
+  816  history
+  817  git commit -m "Adicion de archivos Estados.txt"
+  818  ls
+  819  git status
+  820  git 
+  821  git show
+  822  cd ..
+  823  exit
+  824  exit
+  825  pwd
+  826  ll
+  827  pwd
+  828  ll
+  829  cle
+  830  cls
+  831  pwd
+  832  env
+  833  cls
+  834  ls
+  835  uname -a 
+  836  cd git
+  837  cd bash/
+  838  touch cambios.log
+  839  ls
+  840  more .gitignore 
+  841  echo "*.log" >> .gitignore 
+  842  git status
+  843  git commit -m "Adicion de ignorar log"
+  844  day
+  845  date
+  846  date --help
+  847  man date 
+  848  echo $A
+  849  echo %A
+  850  echo $A
+  851  man date
+  852  date DD
+  853  man date
+  854  date -R DD
+  855  date -R:DD
+  856  date 
+  857  man date
+  858  date -D:DD
+  859  date -d:DD
+  860  man date
+  861  date -d=DD
+  862  git log
+  863  git status
+  864  man git push
+  865  history
+  866  history | grep jpg
+  867  more ../../.bash_history | grep jpg
+  868  more ../../.bash_history 
+  869  more ../../.bash_history |grep wget
+  870  history | grep wget
+  871  exit
+  872  man git status
+  873  man git log
+  874  pwd
+  875  cd git/
+  876  cd clasesinicial/
+  877  git log
+  878  cd ..
+  879  dir
+  880  cd bash/
+  881  git log
+  882  cle
+  883  cls
+  884  git log
+  885  man git log
+  886  git log -E
+  887  git log --all
+  888  ls
+  889  echo "The third line." >> readme.txt
+  890  git diff readme.txt
+  891  echo "Una línea más sin commit." >> readme.txt
+  892  git diff readme.txt
+  893  git commit
+  894  ls
+  895  git log --all
+  896  git commit -m "Tercera linea"
+  897  git log --all
+  898  vi readme.txt 
+  899  git log --all
+  900  git diff readme.txt
+  901  vi readme.txt 
+  902  git diff readme.txt
+  903  git commit -n "Tercera linea agregada"
+  904  git commit -d "Tercera linea agregada"
+  905  git commit -m "Tercera linea agregada"
+  906  git diff readme.txt
+  907  git log
+  908  git commit -m "Tercera linea agregada"
+  909  git log
+  910  git diff readme.txt
+  911  git status
+  912  git checkout readme.txt
+  913  more readme.txt 
+  914  GIT LOG
+  915  git log
+  916  git diff readme.txt
+  917  ls
+  918  more *
+  919  ls
+  920  ll
+  921  cd .git
+  922  ll
+  923  ls -R gitigno*
+  924  find . -name gitigno*
+  925  find . -name gitig
+  926  cd ..
+  927  wget http://pixel.nymag.com/imgs/daily/vulture/2014/08/05/05-interstellar-3.w529.h352.jpg
+  928  ls
+  929  ren 05-interstellar-3.w529.h352.jpg interstella.jpg
+  930  mv 05-interstellar-3.w529.h352.jpg interstella.jpg
+  931  ls
+  932  git status
+  933  echo "*.jpg" > .gitignore
+  934  git status
+  935  git add -A
+  936  git commit -m "Agregado el gitignore para quitar jpg"
+  937  git status
+  938  wget http://discovermagazine.com/~/media/import/images/c/c/f/kipthorne.jpg?mw=900
+  939  ls
+  940  mv kipthorne.jpg\?mw\=900 kip.jpg
+  941  ls
+  942  git status
+  943  ll
+  944  man git log
+  945  add-apt-repository ppa:git-core/ppa
+  946  sudo add-apt-repository ppa:git-core/ppa
+  947  apt update; apt install git
+  948  apt update; sudo apt install git
+  949  sudo apt update; sudo apt install git
+  950  git --version
+  951  git branch
+  952  git branch nueva-prueba-branch
+  953  git branch
+  954  git checkout nueva-prueba-brach
+  955  git checkout nueva-prueba-branch
+  956  git branch
+  957  git status
+  958  git commit -a
+  959  git status
+  960  git checkout master
+  961  git status
+  962  git branch -d nueva-prueba-branch
+  963  git brach
+  964  git branch
+  965  git branch -b nueva-rama
+  966  git checkout -b nueva-rama
+  967  git status
+  968  git branch
+  969  echo "I added this line in the update-readme branch." >> readme.txt
+  970  more readme.txt 
+  971  git add -A
+  972  git commit -m "added a third line to readme.txt"
+  973  git checkout master
+  974  more readme.txt 
+  975  git checkout nueva-rama
+  976  more readme.txt 
+  977  echo "It's sunny outside today." >> readme.txt
+  978  git add -A
+  979  git commit -m "added weather info"
+  980  git status
+  981  git checkout master
+  982  git status
+  983  more readme
+  984  more readme.txt 
+  985  git branches
+  986  git branch
+  987  git checkout master
+  988  git merge nueva-rama
+  989  more readme.txt 
+  990  git branch
+  991  git checkout nueva-rama
+  992  vi readme.txt 
+  993  git add *
+  994  git commit -m "Se cambio sunny por clouddy y se puso en español"
+  995  git checkout master
+  996  more readme.txt 
+  997  vi readme.txt 
+  998  git add *
+  999  git commit -m "Se acortó la línea de cloudy y pasó a Mayúscula"
+ 1000  git merge nueva-rama
+ 1001  git status
+ 1002  cat readme.txt 
+ 1003  more readme.txt 
+ 1004  vi readme.txt 
+ 1005  git add -A
+ 1006  git commit -m "Se resolvió el conflicto"
+ 1007  git status
+ 1008  git log
+ 1009  cls
+ 1010  git remote
+ 1011  git remote add origin https://github.com/fernanoc/primer-repo.git
+ 1012  git remote
+ 1013  git remote remove origin https://github.com/fernanoc/primer-repo.git
+ 1014  git remote remove origin 
+ 1015  git remote add git-web https://github.com/fernanoc/primer-repo.git
+ 1016  git remote 
+ 1017  git push -u git-web fernanoc
+ 1018  git push -u git-web master
+ 1019  git pull -u git-web master
+ 1020  git pull --prune -u git-web master
+ 1021  git push --prune -u git-web master
+ 1022  git push -d -u git-web master
+ 1023  git push -u git-web master
+ 1024  git push -force-with-lease -u git-web master
+ 1025  git push --force-with-lease -u git-web master
+ 1026  git push -f -u git-web master
+ 1027  cd ..
+ 1028  ls
+ 1029  cd clasesinicial/
+ 1030  history
+ 1031  git remote 
+ 1032  git add clasesinicial https://github.com/fernanoc/primer-repo.git
+ 1033  git remote add clasesini https://github.com/fernanoc/primer-repo.git
+ 1034  git remote
+ 1035  git push -f -u clasesini clasesinicial
+ 1036  git push -u clasesini clasesinicial
+ 1037  git push -u clasesini master
+ 1038  git push -u clasesini 
+ 1039  git push -u clasesini master
+ 1040  git remote
+ 1041  git remote remove clasesini
+ 1042  git remote add clasesini https://github.com/fernanoc/scriptsbash.git
+ 1043  git remote
+ 1044  git push -u clasesini master
+ 1045  vi readme.md
+ 1046  git add *
+ 1047  git commit -m "Se agregó el Readme.md"
+ 1048  git push
+ 1049  mcedit readme.md 
+ 1050  git commit
+ 1051  git push
+ 1052  git push -m "Se corrigieron las comillas"
+ 1053  git commit -m "Se corrigieron las comillas"
+ 1054  git push 
+ 1055  more readme.md 
+ 1056  git push 
+ 1057  git push -f
+ 1058  git add *
+ 1059  git push -f
+ 1060  git add *
+ 1061  git commit -m "Se corrigieron las comillas"
+ 1062  git log
+ 1063  git push -f
+ 1064  exit
+ 1065  pwd
+ 1066  ls
+ 1067  cd git/
+ 1068  ls
+ 1069  ññ
+ 1070  ll
+ 1071  cd bash
+ 1072  ls
+ 1073  git status
+ 1074  git checkout update-readme
+ 1075  git -b checkout update-readme
+ 1076  git branch
+ 1077  git branch --?
+ 1078  git branch nuevo
+ 1079  git branch 
+ 1080  git checkout nuevo 
+ 1081  git status
+ 1082  ls
+ 1083  lol
+ 1084  ll
+ 1085  git branch add update-readme
+ 1086  git checkout update-readme
+ 1087  git status
+ 1088  ls
+ 1089  ll
+ 1090  echo "prueba merge" >> readme.txt 
+ 1091  git commit -m "Agregar prueba de merge"
+ 1092  git merge master
+ 1093  more readme.txt 
+ 1094  cd ..
+ 1095  cd bash
+ 1096  git checkout master
+ 1097  more readme.txt 
+ 1098  ls
+ 1099  rm archivo1.txt archivo2.txt archivo3.txt cambios.log
+ 1100  ll
+ 1101  vi readme.txt 
+ 1102  git add -A
+ 1103  git commit -m "Despues de borrar rm archivo1.txt archivo2.txt archivo3.txt cambios.log"
+ 1104  git remote
+ 1105  ls
+ 1106  git merge nuevo
+ 1107  ll
+ 1108  git push git-web master
+ 1109  git checkout nuevo
+ 1110  ll
+ 1111  git checkout master
+ 1112  las
+ 1113  ll
+ 1114  cd ..
+ 1115  mkdir unix-wb
+ 1116  cd unix-wb/
+ 1117  git init
+ 1118  git config 
+ 1119  git status
+ 1120  git clone https://github.com/fernanoc/the-unix-workbench.git
+ 1121  ls
+ 1122  cd the-unix-workbench/
+ 1123  ls
+ 1124  cd ..
+ 1125  rm -fR the-unix-workbench/
+ 1126  cd ..
+ 1127  rm -fR unix-wb/
+ 1128  git clone https://github.com/fernanoc/the-unix-workbench.git
+ 1129  ls
+ 1130  cd the-unix-workbench/
+ 1131  ls
+ 1132  git remote -v
+ 1133  echo "- Fernán Orjuela" >> guestbook.md 
+ 1134  cat guestbook.md 
+ 1135  git add guestbook.md && git commit -m "added my name to guestbook.md"
+ 1136  git push
+ 1137  git log
+ 1138  git status
+ 1139  git clone
+ 1140  git remote
+ 1141  git remote -vv
+ 1142  git remote -v
+ 1143  cd ..
+ 1144  mkdir newtest
+ 1145  cd newtest/
+ 1146  git init
+ 1147  touch todo.txt
+ 1148  touch message.txt
+ 1149  git add todo.txt
+ 1150  git commit -m "first commit"
+ 1151  git add message.txt
+ 1152  echo "- Buy cherries" >> todo.txt
+ 1153  git commit -m "second commit"
+ 1154  echo "- Dear Philip," >> message.txt
+ 1155  ll
+ 1156  more message.txt 
+ 1157  more todo.txt 
+ 1158  git status
+ 1159  git status -v
+ 1160  exit
+ 1161  cd /
+ 1162  ls
+ 1163  cd home/
+ 1164  ls
+ 1165  cd fernanoc/
+ 1166  ls
+ 1167  cd git/
+ 1168  ls
+ 1169  cd bash/
+ 1170  ls
+ 1171  git show
+ 1172  cd ..
+ 1173  ls
+ 1174  cd clasesinicial/
+ 1175  ls
+ 1176  more whileloop.sh 
+ 1177  input
+ 1178  read
+ 1179  man read
+ 1180  read file
+ 1181  echo $file
+ 1182  ls 
+ 1183  ls -l
+ 1184  ls -?
+ 1185  ls --help
+ 1186  ls -1
+ 1187  man tail
+ 1188  man count
+ 1189  count
+ 1190  man tail
+ 1191  man wc
+ 1192  wc
+ 1193  wc --help
+ 1194  ls -1 | wc -1
+ 1195  ls -1 | wc -l
+ 1196  ls -1 
+ 1197  ls -1 | wc -l
+ 1198  files=$(ls -1 | wc -l)
+ 1199  echo $files
+ 1200  history
+ 1201  history >> commands.txt
